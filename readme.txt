@@ -6,3 +6,4 @@ Git tracks changes of files.
 ugly boy
 最新一次修改 试一下提交
 create dev
+create feature&Simple
