@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  var data = [
+    {
+      cardNo: "0014140886",
+      orderNo: "221941761",
+      itemCode: "F00000008313",
+      itemDesc: "心动超声[复]",
+      applyDept: "消化内科门诊",
+      applyDeptCode: "1013",
+      checkDate: "0001-01-01 00:00:00",
+      applyDoc: "刘大巍1",
+      sickroom: "消化内科门诊",
+      bedNo: "",
+      partDesc: "",
+      clinicDiag: "666666",
+      ownCost: "220",
+      recipeNo: "1737265777",
+      execDeptCode: "3032",
+      execDeptName: "心动超声室",
+    },
+    {
+      cardNo: "0014140886",
+      orderNo: "221941761",
+      itemCode: "F000000083133",
+      itemDesc: "心动超声大大",
+      applyDept: "消化内科门诊",
+      applyDeptCode: "1013",
+      checkDate: "0001-01-01 00:00:00",
+      applyDoc: "刘大巍1",
+      sickroom: "消化内科门诊",
+      bedNo: "",
+      partDesc: "",
+      clinicDiag: "666666",
+      ownCost: "220",
+      recipeNo: "1737265777",
+      execDeptCode: "3032",
+      execDeptName: "心动超声室",
+    },
+    {
+      cardNo: "0014140886",
+      orderNo: "221941762",
+      itemCode: "F00000001320",
+      itemDesc: "彩色多普勒超声常规检查",
+      applyDept: "消化内科门诊",
+      applyDeptCode: "1013",
+      checkDate: "0001-01-01 00:00:00",
+      applyDoc: "刘大巍1",
+      sickroom: "消化内科门诊",
+      bedNo: "",
+      partDesc: "",
+      clinicDiag: "666666",
+      ownCost: "90",
+      recipeNo: "1737265776",
+      execDeptCode: "3003",
+      execDeptName: "超声科",
+    },
+    {
+      cardNo: "0014140886",
+      orderNo: "221941763",
+      itemCode: "F00000008313",
+      itemDesc: "心动超声[复]",
+      applyDept: "消化内科门诊",
+      applyDeptCode: "1013",
+      checkDate: "0001-01-01 00:00:00",
+      applyDoc: "刘大巍1",
+      sickroom: "消化内科门诊",
+      bedNo: "",
+      partDesc: "",
+      clinicDiag: "666666",
+      ownCost: "220",
+      recipeNo: "1737265780",
+      execDeptCode: "3032",
+      execDeptName: "心动超声室",
+    },
+    {
+        cardNo: "0014140886",
+        orderNo: "221941764",
+        itemCode: "F00000001320",
+        itemDesc: "彩色多普勒超声常规检查",
+        applyDept: "消化内科门诊",
+        applyDeptCode: "1013",
+        checkDate: "0001-01-01 00:00:00",
+        applyDoc: "刘大巍1",
+        sickroom: "消化内科门诊",
+        bedNo: "",
+        partDesc: "",
+        clinicDiag: "666666",
+        ownCost: "90",
+        recipeNo: "1737265780",
+        execDeptCode: "3032",
+        execDeptName: "心动超声室",
+    },
+    {
+        cardNo: "0014140886",
+        orderNo: "221941764",
+        itemCode: "F00000001323",
+        itemDesc: "lalala",
+        applyDept: "消化内科门诊",
+        applyDeptCode: "1013",
+        checkDate: "0001-01-01 00:00:00",
+        applyDoc: "刘大巍1",
+        sickroom: "消化内科门诊",
+        bedNo: "",
+        partDesc: "",
+        clinicDiag: "666666",
+        ownCost: "90",
+        recipeNo: "1737265780",
+        execDeptCode: "3032",
+        execDeptName: "心动超声室",
+    }
+]
+
+function duplicate(arr){
+  for(let i =0;i<arr.length;i++){
+    for(let j = i+1;j<arr.length;j++){
+      if(arr[i].recipeNo === arr[j].recipeNo){
+        arr[i].itemCode = arr[i].itemCode + ',' + arr[j].itemCode
+        arr[i].itemDesc = arr[i].itemDesc + ',' + arr[j].itemDesc
+        arr.splice(j, 1);
+        j--;
+      }
+    }
+  }
+  console.log(arr)
+}
+
+function dumplate1(arr){
+
+}
+duplicate(data)
+
+</script>
+</html>
