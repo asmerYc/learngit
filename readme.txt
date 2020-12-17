@@ -18,4 +18,3 @@ lalala
 我在master上去做一次提交
 
 git add 一下
-git add 第二次
