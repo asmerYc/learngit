@@ -16,11 +16,8 @@ create feature
 lalala
 
 我在master上去做一次提交
-<<<<<<< HEAD
 我继续在master上去做一次提交
 
 hahh
 
 heiheihei
-=======
->>>>>>> master
